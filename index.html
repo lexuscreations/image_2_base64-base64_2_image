@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="image2base64-and-base642image" />
+    <meta name="description" content="image2base64-and-base642image" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <script src="./script.js" defer type="application/javascript"></script>
+
+    <title>image2base64-and-base642image</title>
+  </head>
+  <body>
+    <header>
+      <h1>image-2-base64 base64-2-image conversation download</h1>
+    </header>
+    <main>
+      <div class="container">
+        <section>
+          <div class="image-preview-container">
+            <div class="preview">
+              <p style="margin-bottom: 1rem">
+                Please Select An Image Or Paste Base64
+              </p>
+              <img
+                style="display: none"
+                id="preview-selected-image"
+                alt="Something Went Wrong With Image"
+              />
+            </div>
+            <label id="selectImageBtn" tabindex="1" for="file-upload"
+              >Select Image</label
+            >
+            <input
+              type="file"
+              id="file-upload"
+              accept="image/*"
+              style="display: none"
+            />
+          </div>
+        </section>
+        <section>
+          <a id="downloadBtn" class="disabled" tabindex="1"
+            ><i class="fa fa-download"></i>&nbsp;&nbsp;Download-Image</a
+          >
+        </section>
+        <section>
+          <div class="base64TextConatiner">
+            <textarea
+              tabindex="1"
+              id="base64TextArea"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Author: LexusCreations<br />
+        <i class="fa fa-github" aria-hidden="true">
+          <a
+            tabindex="1"
+            href="https://github.com/lexuscreations"
+            target="blank"
+            >github/lexuscreations</a
+          >
+        </i>
+      </p>
+    </footer>
+  </body>
+</html>
